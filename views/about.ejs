@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./head') %>
+
+    <style>
+      .parent{
+        display: flex;
+      }
+      .parent .child{
+        flex: 1;
+        text-align: center;
+      }
+      .left{
+        text-align: center;
+      }
+      .middle{
+        text-align: center;
+      }
+      .right{
+        text-align: center;
+      }
+      .txtbox1{
+        border-style: solid;
+        border-width: 3px 3px 3px 8px;
+        padding: 12px;
+        word-break: break-all;
+        border-color: green;
+      }
+      .txtbox2{
+        border-style: solid;
+        border-width: 3px 3px 3px 8px;
+        padding: 12px;
+        word-break: break-all;
+        border-color: darkblue;
+      }
+      .txtbox3{
+        border-style: solid;
+        border-width: 3px 3px 3px 8px;
+        padding: 12px;
+        word-break: break-all;
+        border-color: orange;
+      }
+    </style>
+
+  </head>
+  <body>
+    <%- include('./nav') %>
+
+    <div class="container mb-3">
+      <h2 class="mb-3">About</h2>
+
+      <div class="parent">
+        <div class="child left">
+          <img src="images/infoph.png" alt="info" onload="resize(this)">
+          <p style="font-size: 20px; font-weight: bold;"><br>About</p>
+          <div class="txtbox1"><p><br>전국에 위치한 공영, 민영 주차장에 대한 정보를 안내해드립니다. 약 1만 5백여개의 주차장 정보가 저장되어 있습니다. 정보로는 주차장의 위치, 운영시간, 요금정보 등을 찾아보실 수 있습니다.<br></p></div>
+        </div>
+
+        <div class="child middle">
+          <img src="images/mapph.png" alt="map" onload="resize(this)">
+          <p style="font-size: 20px; font-weight: bold;"><br>Map</p>
+          <div class="txtbox2"><p>사용자가 원하는 지역을 검색하면 해당 지역 주변에 있는 주차장들이 지도 상에 보여집니다. 해당 주차장을 선택하면 상세 정보를 안내받을 수 있습니다. 또한, GPS를 통해 사용자의 현재 위치 주변에 있는 주차장을 안내받을 수 있습니다.</p></div>
+        </div>
+
+        <div class="child right">
+          <img src="images/dataph.png" alt="data" onload="resize(this)">
+          <p style="font-size: 20px; font-weight: bold;"><br>Data</p>
+          <div class="txtbox3"><p><br>전국 주차장의 평균 요금정보, 운영시간, 주차장 분포도 등의 데이터를 확인할 수 있습니다. 이용에 많은 도움을 받을 수 있습니다.<br><br></p></div>
+        </div>
+      </div>
+  
+    </div>
+
+    <script type="text/javascript" src="/javascripts/about.js"></script>
+  </body>
+</html>

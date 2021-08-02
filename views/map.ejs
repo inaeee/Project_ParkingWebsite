@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./head') %>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=jzhgr5xams"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3aab26898f1ebf62a140b4f1c824535a&libraries=services"></script>
+  </head>
+  
+  <body>
+    <%- include('./nav') %>
+
+    <div class="container mb-3">
+      <h2 class="mb-3">Map</h2>
+
+      <div id="map" style="width:100%;height:600px;"></div>
+      <div id="current">현재 위치</div>
+      <div id="search">
+        <input id="search_input" placeholder="목적지를 입력하세요."/>
+        <button id="search_button">검색</button>
+      </div>
+
+      <script type="text/javascript" src="/javascripts/MarkerClustering.js"></script>
+      <script type="text/javascript" src="/data/data.js"></script>
+      <script>
+        
+
+      </script>
+    </div>
+
+    <script type="text/javascript" src="/javascripts/map.js"></script>
+  </body>
+</html>

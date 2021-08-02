@@ -1,0 +1,134 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.marker {
+  border: 1px solid black;
+  background: orange;
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.infowindow_wrap {
+  background: white;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-size: 12px;
+}
+
+.infowindow_title {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#current {
+  position: absolute;
+  top: 150px;
+  z-index: 10000;
+  background: white;
+  left: 230px;
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.pulse {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgb(255,0,0);
+  animation: pulse 1.7s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 49, 44, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(204, 49, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(204, 49, 44, 0);
+    -moz-box-shadow: 0 0 0 20px rgba(204, 49, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 49, 44, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(204, 49, 44, 0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 49, 44, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(204, 49, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(204, 49, 44, 0);
+    -moz-box-shadow: 0 0 0 20px rgba(204, 49, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 49, 44, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(204, 49, 44, 0);
+  }
+}
+
+#search {
+  position: absolute;
+  top: 150px;
+  left: 330px;
+  padding: 12px;
+  z-index: 10000;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+#search_input {
+  border: none;
+}
+
+#search_input:focus {
+  outline: none;
+}
+
+.cluster1 {
+  width: 25px;
+  height: 25px;
+  line-height: 26px;
+  font-size: 10px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background: rgba(255,149,79,0.7);
+}
+
+.cluster2 {
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  font-size: 10px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background: rgba(255,149,79,0.7);
+}
+
+.cluster3 {
+  width: 35px;
+  height: 35px;
+  line-height: 26px;
+  font-size: 10px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background: rgba(255,149,79,0.7);
+}
